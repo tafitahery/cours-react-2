@@ -9,6 +9,12 @@ const Navigation = () => {
           <li>acceuil</li>
         </NavLink>
         <NavLink
+          to="/news"
+          className={(nav) => (nav.isActive ? 'nav-active' : '')}
+        >
+          <li>news</li>
+        </NavLink>
+        <NavLink
           to="/about"
           className={(nav) => (nav.isActive ? 'nav-active' : '')}
         >
